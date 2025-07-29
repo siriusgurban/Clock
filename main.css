@@ -1,0 +1,106 @@
+body {
+  background-color: black;
+}
+
+.clock {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border: 2px solid black;
+  background-color: wheat;
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.hour {
+  width: 400px;
+  height: 6px;
+  left: 10%;
+}
+
+.hourOne {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.hourTwo {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+}
+
+.minute {
+  width: 450px;
+  height: 4px;
+  left: 6%;
+}
+
+.minuteOne {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.minuteTwo {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: goldenrod;
+}
+
+.second {
+  width: 490px;
+  height: 2px;
+  display: flex;
+}
+
+.secondOne {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.secondTwo {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+
+.digit {
+  font-size: 50px;
+}
+
+.twelve {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+}
+
+.one {
+  position: absolute;
+  top: 2%;
+  left: 80%;
+}
+
+.two {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+}
+
+.three {
+  position: absolute;
+  top: 44%;
+  left: 95%;
+}
