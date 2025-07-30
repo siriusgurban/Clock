@@ -17,16 +17,28 @@ function secondHand() {
 secondHand();
 
 const minute = document.querySelector(".minute");
-minute.style.transform = `rotate(${90 + 6 * date.getMinutes()}deg)`;
 
 function minuteHand() {
-  let minuteDeg = 90 + 6 * date.getMinutes();
+  // let minuteDeg = 90 + 6 * date.getMinutes();
+  let minuteAdd = 90 + 6 * date.getMinutes();
+  minute.style.transform = `rotate(${minuteAdd}deg)`;
   console.log(date.getMinutes(), "minutes");
+  let seconds = date.getSeconds();
 
-  setInterval(() => {
-    minute.style.transform = `rotate(${minuteDeg}deg)`;
-    minuteDeg += 6;
-  }, 60000);
+  let diffSec = 60 - seconds;
+
+  do {
+    setInterval(() => {
+      minute.style.transform = `rotate(${minuteAdd}deg)`;
+      minuteAdd += 6;
+    }, diffSec * 1000);
+  } while (true);
+  {
+    setInterval(() => {
+      minute.style.transform = `rotate(${minuteAdd}deg)`;
+      minuteAdd += 6;
+    }, 60000);
+  }
 }
 
 minuteHand();

@@ -81,7 +81,7 @@ body {
   font-size: 50px;
 }
 
-.twelve {
+/* .twelve {
   position: absolute;
   top: 0%;
   left: 50%;
@@ -103,4 +103,42 @@ body {
   position: absolute;
   top: 44%;
   left: 95%;
+} */
+
+.firstQuarter {
+  position: absolute;
+  top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 98%;
+}
+
+.secondQuarter {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.thirdQuarter {
+  position: absolute;
+  bottom: 2%;
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-direction: row-reverse;
+  width: 98%;
+}
+
+.fourthQuarter{
+    position: absolute;
+  top: 2%;
+  left: 2%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  height: 100%;
 }
